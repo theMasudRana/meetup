@@ -1,0 +1,32 @@
+body {
+    background-color: #282c34;
+}
+
+.modal {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+}
+
+.btn {
+    @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+
+.btn-primary {
+    @apply text-green-500;
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .9;
+}
