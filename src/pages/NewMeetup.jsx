@@ -1,7 +1,8 @@
-import React from 'react'
+import { useHistory } from 'react-router';
 import NewMeetupForm from '../components/meetup/NewMeetupForm'
 
 function NewMeetup() {
+    const history = useHistory();
 
     const addMeetupHandler = (meetupData) => {
         fetch(
@@ -13,7 +14,9 @@ function NewMeetup() {
                     'Content-Type': 'application/json'
                 }
             }
-        );
+        ).then(() => {
+            history.replace('/')
+        });
     }
 
     return (
