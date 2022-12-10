@@ -1,46 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
-const EVENT_DATA = [
-    {
-        id: 1,
-        title: 'WordCamp Dhaka',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, debitis.',
-        image: './dhaka.jpg'
-    },
-    {
-        id: 2,
-        title: 'WordCamp Dhaka',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, debitis.',
-        image: './dhaka.jpg'
-    },
-    {
-        id: 3,
-        title: 'WordCamp Dhaka',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, debitis.',
-        image: './dhaka.jpg'
-    },
-    {
-        id: 4,
-        title: 'WordCamp Dhaka',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, debitis.',
-        image: './dhaka.jpg'
-    },
-    {
-        id: 5,
-        title: 'WordCamp Dhaka',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, debitis.',
-        image: './dhaka.jpg'
-    },
-    {
-        id: 6,
-        title: 'WordCamp Dhaka',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, debitis.',
-        image: './dhaka.jpg'
-    }
-]
 import MeetupList from '../components/meetup/MeetupList'
-
-
 
 function Meetups() {
     const [loading, setLoading] = useState(true);
